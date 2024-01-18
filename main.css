@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #23b0f1;
+    color: rgb(50, 26, 190);
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: left;
+
+}
+
+h2, h3 {
+    color: rgb(50, 26, 190);
+}
+
+main {
+    padding: 20px;
+}
+
+.sobre-a-loja {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.imagem-loja {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imagem-loja img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto-loja {
+    flex: 1;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #23b0f1;;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1883b4; /* Tom mais escuro de azul ao passar o mouse */
+}
+
+nav {
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(50, 26, 190);
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    margin-bottom: 0;
+}
+
+form button {
+    background-color: #23b0f1;
+    color: #000; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #1883b4; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+footer {
+    background-color: #23b0f1;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.cotacao h2,
+.contato h2 {
+    text-align: center;
+}
+
+.contato {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    text-align: left;
+}
