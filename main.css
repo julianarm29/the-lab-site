@@ -20,7 +20,6 @@ header {
 h1 {
     font-size: 1.5em;
     text-align: left;
-
 }
 
 h2, h3 {
@@ -54,6 +53,7 @@ main {
     flex: 1;
     font-size: 18px;
     text-align: justify;
+    margin-top: 20px;
 }
 
 .produtos {
@@ -169,4 +169,52 @@ footer {
 form {
     margin: 0 auto;
     text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+
+    .sobre-a-loja {
+        flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+    }
+
+    .imagem-loja {
+        margin-right: 0; /* Remove a margem à direita para ocupar toda a largura */
+    }
+
+    .imagem-loja img {
+        max-width: 100%; /* A imagem ocupa 100% da largura da página */
+    }
+
+    .texto-loja {
+        margin-top: 20px; /* Adiciona espaço acima do texto para separá-lo da imagem */
+    }
+
+    .produtos .produto {
+        width: 100%; /* Cada produto ocupa 100% da largura, um por linha */
+        margin: 10px 0; /* Adiciona espaço acima e abaixo de cada produto */
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .sobre-a-loja {
+        flex-direction: row; /* Retorna à direção original do flex para mostrar lado a lado */
+    }
+
+    .imagem-loja {
+        margin-right: 20px; /* Restaura a margem à direita para a imagem da loja */
+    }
+
+    .imagem-loja img {
+        max-width: 100%; /* A imagem continua a ocupar 100% da largura da página */
+    }
+
+    .texto-loja {
+        margin-top: 0; /* Remove o espaço acima do texto para alinhá-lo com a imagem */
+        flex: 1; /* Mantém o texto flexível para ocupar o restante do espaço */
+    }
+
+    .produtos .produto {
+        width: calc(33.33% - 20px); /* Cada produto ocupa 33.33% da largura, três por linha */
+    }
 }
